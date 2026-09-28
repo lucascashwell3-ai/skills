@@ -1,0 +1,32 @@
+---
+name: show-me
+description: Turn a text-heavy answer into one scannable visual page. Use whenever a reply would have more than ~5 parts — status across several things, options to pick from, a plan, a comparison, a storyboard, an inventory, a review of a build — or when the user says "show me", "visualize it", "make it a page", "too much text", or sounds overwhelmed.
+license: MIT
+---
+
+# Show me — one page instead of a wall of text
+
+People read pictures and short lines faster than paragraphs. A page must be scannable in 30
+seconds and answerable out loud ("3 is wrong, keep 5").
+
+1. **Put the page where this app can show one:**
+   - **The app shows pages** (Claude artifacts, ChatGPT canvas, and the like): build ONE page
+     there. If the app has its own design guidance for pages, follow it.
+   - **The app can write files** (Claude Code, Codex, Cursor, Gemini CLI, Copilot): write ONE
+     self-contained HTML file — inline CSS, no outside scripts or fonts — to a temp folder, open
+     it (`open` on macOS, `xdg-open` on Linux, `start` on Windows), and give the path.
+   - **Neither:** the same shape in the chat as Markdown — the top box as a quote, then the
+     numbered one-liners and at most one table.
+2. **Shape of the page:**
+   - Top box: **what you need from them / what they need from you** — the one or two
+     decisions, each answerable by a word or a number.
+   - Then the items, **numbered**, one line each, in plain words. Their own words (quoted)
+     wherever they exist. A status pill (Done / Almost / Waiting on you / Parked / Broken) or a
+     small picture instead of a sentence wherever possible.
+   - Detail hides behind a toggle; nothing important lives only in the toggle.
+   - No paragraphs. No jargon. Real links.
+   - Readable in light and dark, and at phone width.
+3. **Chat reply:** the link or file path, at most 3 lines, one ask. Never repeat the page in
+   chat.
+4. **Facts come from the source** — files, tools, live checks — never from memory alone.
+5. **Revise the same page** (or overwrite the same file) so they keep one link.
