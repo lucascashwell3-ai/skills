@@ -11,7 +11,7 @@ seconds and answerable out loud ("3 is wrong, keep 5").
 
 1. **Put the page where this app can show one:**
    - **The app shows pages** (Claude artifacts, ChatGPT canvas, and the like): build ONE page
-     there. If the app has its own design guidance for pages, follow it.
+     there, within the app's own technical rules for pages.
    - **The app can write files** (Claude Code, Codex, Cursor, Gemini CLI, Copilot): write ONE
      self-contained HTML file — inline CSS, no outside scripts or fonts — to a temp folder, open
      it (`open` on macOS, `xdg-open` on Linux, `start` on Windows), and give the path.
@@ -26,7 +26,18 @@ seconds and answerable out loud ("3 is wrong, keep 5").
    - Detail hides behind a toggle; nothing important lives only in the toggle.
    - No paragraphs. No jargon. Real links.
    - Readable in light and dark, and at phone width.
-3. **Chat reply:** the link or file path, at most 3 lines, one ask. Never repeat the page in
+3. **The look** — clean and quiet, in the spirit of cursor.com, unless they ask for another:
+   - One background and one text colour. Softer text and borders are that same text colour,
+     fainter — no extra greys. Borders you barely notice. No gradients, glows, coloured shadows
+     or stripe borders.
+   - One accent colour, kept for the top box and whatever needs action first.
+   - Colour only where it means something: a small filled pill or dot per item — red = needs
+     them now, amber = soon, green = done, grey = nothing to do.
+   - A filled icon or emoji only where it says something faster than a word — a status, a kind
+     of item, an action (⏰ deadline, 💬 reply, 📅 meeting, ✅ done). At most one per line; never
+     decoration.
+   - One clean sans font, modest sizes, plenty of space between groups; numbers line up.
+4. **Chat reply:** the link or file path, at most 3 lines, one ask. Never repeat the page in
    chat.
-4. **Facts come from the source** — files, tools, live checks — never from memory alone.
-5. **Revise the same page** (or overwrite the same file) so they keep one link.
+5. **Facts come from the source** — files, tools, live checks — never from memory alone.
+6. **Revise the same page** (or overwrite the same file) so they keep one link.
