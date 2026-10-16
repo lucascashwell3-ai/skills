@@ -1,6 +1,6 @@
 # Skills
 
-Four small skills for any AI app that supports skills — Claude Code, the Claude app, Codex,
+Six small skills for any AI app that supports skills — Claude Code, the Claude app, Codex,
 Cursor, Gemini, Copilot. Plain Markdown: no scripts, no installers, nothing that runs on its own.
 
 | Skill | What changes | How to call it |
@@ -9,6 +9,8 @@ Cursor, Gemini, Copilot. Plain Markdown: no scripts, no installers, nothing that
 | [plain](plain/) | The last answer comes back as a few short, plain bullets you can read in ten seconds. | Type `/plain` after a long reply. |
 | [boris](boris/) | Your AI's instruction files, memory and skills get trimmed to what's true now — archived, never deleted. | Type `/boris` when your AI starts ignoring your instructions. |
 | [linus-review](linus-review/) | A cold code review: did the build do what was claimed, and what's the ranked fix plan. | Type `/linus-review` before you ship. |
+| [build-verification](build-verification/) | Before your AI says "it works," it shows proof: tests, a real run, and a live check. | Your AI uses it on its own when it finishes a fix or a feature. |
+| [exposure-scanner-design](exposure-scanner-design/) | Two design rules for tools that audit security settings: probe from the outside, and rate severity by how sensitive the data is. | Your AI uses it when you design or review a security scanner. |
 
 ## Install
 
